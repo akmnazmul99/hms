@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>HMS</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <link rel="apple-touch-icon" href="images/">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/sm-core-css.css">
+        <link rel="stylesheet" href="css/sm-blue.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- script -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.smartmenus.js"></script>
+        <script src="js/custom.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav id="main-nav">
+                <ul id="main-menu" class="sm sm-blue">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="">Patient</a>
+                        <ul>
+                            <li><a href="">Record</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Medical</a>
+                        <ul>
+                            <li><a href="">Sales</a></li>
+                            <li><a href="">Purchase</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Reports</a>
+                        <ul>
+                            <li><a href="">Consulting Payment Details</a></li>
+                            <li><a href="">Medical Store Invoice Details</a></li>
+                            <li><a href="">Overall Payment Details</a></li>
+                            <li><a href="">Patient History Details</a></li>
+                            <li><a href="">Items Need to Purchase</a></li>
+                            <li><a href="">Medical Certificate</a></li>
+                            <li><a href="">Patient Medical History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Masters</a>
+                        <ul>
+                            <li><a href="">Patient Master</a></li>
+                            <li><a href="">Vendor Master</a></li>
+                            <li><a href="">Product Master</a></li>
+                            <li><a href="">Brand Master</a></li>
+                            <li><a href="">Group Master</a></li>
+                            <li><a href="">Units Master</a></li>
+                            <li><a href="">Vendor Rating</a></li>
+                            <li><a href="">Task Assignment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Administrator</a>
+                        <ul>
+                            <li><a href="">Application Users</a></li>
+                            <li><a href="">About the Hospital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row margin-top-60px">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3>Search Patient</h3>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="radio-inline radio_inline">
+                                <input type="radio" id="patient-search-by-name" name="patient-search-item" checked> By Name
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="radio-inline radio_inline">
+                                <input type="radio" id="patient-search-by-id" name="patient-search-item"> By Patient ID
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <input type="text" id="patient-search" name="patient-search" class="form-control" value="">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <button id="appointment-search-button" class="form-control custom-button">Search</button>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Patient ID</th>
+                                        <th>Patient Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Appointment Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Patient ID">1001</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1002</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1003</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1004</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1005</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1006</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1007</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1008</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1009</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Patient ID">1010</td>
+                                        <td data-label="Token NO">Nazmul Hasan</td>
+                                        <td data-label="Patient Name">01612341234</td>
+                                        <td data-label="Appointment Date">26/09/2017</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <nav aria-label="Page navigation" class="form-group">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row form-group margin-top-60px">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="">Patient Details</h3>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Token No:</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p id="token-number">1</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Date <span class="color-red">*</span>:</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <input id="appointment-date" name="appointment-date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Patient ID <span class="color-red">*</span>:</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <input id="patient-id" name="patient-id" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Patient Name <span class="color-red">*</span>:</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <input id="patient-name" name="patient-name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Phone Number:</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <input id="phone-number" name="phone-number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-offset-6 col-md-3 col-lg-offset-6 col-lg-3">
+                            <button id="appointment-save-button" class="form-control custom-button">Save</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <button id="appointment-clear-button" class="form-control custom-button">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
